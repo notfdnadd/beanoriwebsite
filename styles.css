@@ -20,6 +20,26 @@ body.site-body {
     linear-gradient(180deg, #fcfaf8 0%, #f7f5f2 100%);
 }
 
+.background-accent-fixed {
+  position: fixed;
+  inset: 0;
+  z-index: -20;
+  pointer-events: none;
+  background-image: url("./EXPORT - PNG/ELEMENT 4.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.16;
+  filter: saturate(0.9) brightness(0.92);
+}
+
+.background-accent-fixed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(247, 245, 242, 0.06), transparent 38%);
+}
+
 img {
   display: block;
   max-width: 100%;
