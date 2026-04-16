@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beanori Indonesia | Wealth in Every Origin</title>
+    <meta
+      name="description"
+      content="Beanori Indonesia presents premium Indonesian coffee beans sourced from renowned regions and crafted through careful roasting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coffee: "#6B4F3B",
+              cream: "#F7F5F2",
+              forest: "#3F5F3A",
+              beige: "#D8CCB8",
+              accent: "#6B8F95",
+              ink: "#1F1F1F",
+              sand: "#EDE4D8",
+              almond: "#F2ECE5",
+              bark: "#2F241D",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 24px 60px -32px rgba(45, 31, 19, 0.20)",
+              lift: "0 36px 90px -34px rgba(24, 21, 18, 0.36)",
+              innerGlow: "inset 0 1px 0 rgba(255, 255, 255, 0.28)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="site-body overflow-x-hidden bg-cream font-sans text-ink antialiased">
+    <div class="relative isolate">
+      <div class="absolute inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(circle_at_top,_rgba(107,79,59,0.08),_transparent_42%)]"></div>
+
+      <header class="sticky top-0 z-50">
+        <div class="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between rounded-full border border-white/70 bg-cream/90 px-4 py-3 shadow-soft backdrop-blur-xl">
+            <a href="#top" class="flex items-center gap-3">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-coffee shadow-soft">
+                <img
+                  src="./EXPORT - PNG/LOGO 5.png"
+                  alt="Beanori icon"
+                  class="h-7 w-7 object-contain"
+                />
+              </span>
+              <span class="leading-tight">
+                <span class="block font-display text-xl text-ink">Beanori</span>
+                <span class="block text-[0.68rem] uppercase tracking-[0.35em] text-coffee/70">Indonesia</span>
+              </span>
+            </a>
+
+            <button id="menu-toggle" class="md:hidden p-2 rounded-full hover:bg-white/20 transition" aria-label="Toggle menu">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6 stroke-current text-coffee" stroke-width="2">
+                <path d="M3 12h18M3 6h18M3 18h18"></path>
+              </svg>
+            </button>
+
+            <nav class="hidden items-center gap-8 text-sm font-medium text-ink/75 md:flex">
+              <a href="#about" class="transition hover:text-coffee">About</a>
+              <a href="#principles" class="transition hover:text-coffee">Principles</a>
+              <a href="#collection" class="transition hover:text-coffee">Collection</a>
+              <a href="#team" class="transition hover:text-coffee">Team</a>
+            </nav>
+
+            <a
+              href="#partner"
+              class="rounded-full bg-coffee px-5 py-3 text-sm font-semibold text-cream transition hover:-translate-y-0.5 hover:bg-bark"
+            >
+              Become a Partner
+            </a>
+          </div>
+          <nav id="mobile-menu" class="mobile-anchor-nav hidden md:hidden">
+            <a href="#about">About</a>
+            <a href="#principles">Principles</a>
+            <a href="#collection">Collection</a>
+            <a href="#team">Team</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="relative pt-10 sm:pt-14">
+          <div class="mx-auto grid max-w-7xl gap-12 px-4 pb-20 pt-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8 lg:pb-24">
+            <div class="max-w-2xl">
+              <p class="section-title text-xs font-semibold uppercase text-coffee/70">Premium Indonesian Coffee</p>
+              <h1 class="mt-6 font-display text-5xl leading-[0.95] text-ink sm:text-6xl lg:text-7xl">
+                Wealth in Every Origin
+              </h1>
+              <p class="mt-6 max-w-xl text-lg leading-8 text-ink/70">
+                Premium Indonesian coffee beans sourced from the finest regions and crafted through careful roasting.
+              </p>
+
+              <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#collection"
+                  class="inline-flex items-center justify-center rounded-full bg-coffee px-7 py-4 text-sm font-semibold text-cream transition hover:-translate-y-0.5 hover:bg-bark"
+                >
+                  Explore Coffee
+                </a>
+                <a
+                  href="#partner"
+                  class="inline-flex items-center justify-center rounded-full border border-coffee/20 bg-white/70 px-7 py-4 text-sm font-semibold text-coffee transition hover:-translate-y-0.5 hover:border-coffee/40 hover:bg-white"
+                >
+                  Become a Partner
+                </a>
+              </div>
+
+              <div class="mt-12 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-[1.6rem] border border-white/70 bg-white/70 p-5 shadow-soft backdrop-blur">
+                  <p class="text-xs uppercase tracking-[0.24em] text-coffee/60">Origins</p>
+                  <p class="mt-2 text-lg font-semibold text-ink">Aceh, Sumatra, Java</p>
+                </div>
+                <div class="rounded-[1.6rem] border border-white/70 bg-white/70 p-5 shadow-soft backdrop-blur">
+                  <p class="text-xs uppercase tracking-[0.24em] text-coffee/60">Craft</p>
+                  <p class="mt-2 text-lg font-semibold text-ink">Roasted with precision</p>
+                </div>
+                <div class="rounded-[1.6rem] border border-white/70 bg-white/70 p-5 shadow-soft backdrop-blur">
+                  <p class="text-xs uppercase tracking-[0.24em] text-coffee/60">Service</p>
+                  <p class="mt-2 text-lg font-semibold text-ink">Retail and B2B ready</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -right-10 top-6 h-44 w-44 rounded-full bg-accent/10 blur-3xl"></div>
+              <div class="absolute -left-10 bottom-10 h-40 w-40 rounded-full bg-coffee/10 blur-3xl"></div>
+              <div class="relative overflow-hidden rounded-[2.6rem] bg-[linear-gradient(135deg,#261d16_0%,#483327_48%,#231a15_100%)] p-6 shadow-lift sm:p-8">
+                <img
+                  src="./EXPORT - PNG/ELEMENT 6.png"
+                  alt=""
+                  class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.15]"
+                />
+                <div class="relative flex min-h-[28rem] items-center justify-center rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+                  <img
+                    src="./EXPORT - PNG/Outer Box Front Mockup Transparent.png"
+                    alt="Beanori premium coffee packaging"
+                    class="mx-auto max-h-[30rem] w-full object-contain"
+                  />
+                </div>
+                <div class="hero-note-row relative mt-6 flex items-center justify-between rounded-[1.5rem] border border-white/10 bg-white/10 px-5 py-4 text-cream/90 backdrop-blur">
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.24em] text-cream/60">Beanori Indonesia</p>
+                    <p class="mt-2 font-display text-2xl">Specialty, grounded in origin</p>
+                  </div>
+                  <div class="hidden rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-cream/70 sm:block">
+                    Since origin matters
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="py-20 sm:py-24">
+          <div class="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:px-8">
+            <div class="relative mx-auto w-full max-w-xl">
+              <div class="absolute left-6 top-12 h-48 w-48 rounded-full bg-beige/60 blur-3xl"></div>
+              <div class="absolute bottom-12 right-0 h-44 w-44 rounded-full bg-accent/10 blur-3xl"></div>
+              <div class="story-collage relative overflow-hidden rounded-[2.6rem] p-6 shadow-soft sm:p-8">
+                <div class="grid gap-5 sm:grid-cols-[1.1fr_0.9fr]">
+                  <div class="story-collage-main rounded-[2rem] bg-white/80 p-6 shadow-innerGlow">
+                    <img
+                      src="./EXPORT - PNG/Packaging Luno Mockup Transparent.png"
+                      alt="Beanori Luno packaging mockup"
+                      class="mx-auto h-full w-full object-contain"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-5">
+                    <div class="story-collage-side rounded-[2rem] bg-white/70 p-5 shadow-innerGlow">
+                      <img
+                        src="./EXPORT - PNG/Packaging Kora Mockup Transparent.png"
+                        alt="Beanori Kora packaging mockup"
+                        class="mx-auto h-full w-full object-contain"
+                      />
+                    </div>
+                    <div class="rounded-[2rem] bg-coffee p-5 text-cream shadow-soft">
+                      <p class="text-xs uppercase tracking-[0.28em] text-cream/70">Selected from</p>
+                      <p class="mt-3 font-display text-2xl leading-tight">Aceh, Sumatra, and Central Java</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="section-title text-xs font-semibold uppercase text-coffee/70">About Beanori</p>
+              <h2 class="mt-5 max-w-2xl font-display text-4xl leading-tight text-ink sm:text-5xl">
+                Indonesian coffee heritage refined for a modern market
+              </h2>
+              <p class="mt-6 text-lg leading-8 text-ink/70">
+                Beanori represents the richness of Indonesian coffee heritage. Our beans come from renowned regions such as Aceh, Sumatra, and Java.
+              </p>
+              <p class="mt-4 text-lg leading-8 text-ink/70">
+                Through careful bean selection, roasting expertise, and professional sourcing standards, Beanori delivers consistent quality and refined flavor.
+              </p>
+
+              <div class="mt-10 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-[1.8rem] border border-coffee/10 bg-white/75 p-5 shadow-soft">
+                  <p class="font-semibold text-ink">Carefully selected beans</p>
+                  <p class="mt-2 text-sm leading-6 text-ink/70">Curated lots chosen for quality, clarity, and dependable cup profile.</p>
+                </div>
+                <div class="rounded-[1.8rem] border border-coffee/10 bg-white/75 p-5 shadow-soft">
+                  <p class="font-semibold text-ink">Professional roasting process</p>
+                  <p class="mt-2 text-sm leading-6 text-ink/70">Roasting decisions shaped to preserve origin character and drinking balance.</p>
+                </div>
+                <div class="rounded-[1.8rem] border border-coffee/10 bg-white/75 p-5 shadow-soft">
+                  <p class="font-semibold text-ink">Premium Indonesian origins</p>
+                  <p class="mt-2 text-sm leading-6 text-ink/70">A focused lineup built from some of Indonesia's most respected growing regions.</p>
+                </div>
+                <div class="rounded-[1.8rem] border border-coffee/10 bg-white/75 p-5 shadow-soft">
+                  <p class="font-semibold text-ink">Reliable B2B partnerships</p>
+                  <p class="mt-2 text-sm leading-6 text-ink/70">Ready for cafes, restaurants, and wholesale programs that need consistency.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="principles" class="py-20 sm:py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+              <p class="section-title text-xs font-semibold uppercase text-coffee/70">Key Principles</p>
+              <h2 class="mt-5 font-display text-4xl text-ink sm:text-5xl">Built for trust, clarity, and everyday partnership</h2>
+            </div>
+
+            <div class="mt-14 grid gap-6 lg:grid-cols-3">
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-coffee text-cream">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-7 w-7 stroke-current" stroke-width="1.7">
+                    <path d="M6 12.5 10 16l8-9" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 3 5.5 5.5v5.7c0 4.3 2.5 8.3 6.5 9.8 4-1.5 6.5-5.5 6.5-9.8V5.5L12 3Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Reliable</h3>
+                <p class="mt-4 text-base leading-7 text-ink/70">
+                  Consistent sourcing, roasting, and supply support for partners who need dependable product quality.
+                </p>
+              </article>
+
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-forest text-cream">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-7 w-7 stroke-current" stroke-width="1.7">
+                    <path d="M12 21s6-4.35 6-10a6 6 0 1 0-12 0c0 5.65 6 10 6 10Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle cx="12" cy="11" r="2.5"></circle>
+                  </svg>
+                </div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Origin Based</h3>
+                <p class="mt-4 text-base leading-7 text-ink/70">
+                  Each coffee is positioned around regional identity, highlighting the value of its place of origin.
+                </p>
+              </article>
+
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-cream">
+                  <svg viewBox="0 0 24 24" fill="none" class="h-7 w-7 stroke-current" stroke-width="1.7">
+                    <path d="M12 6v12" stroke-linecap="round"></path>
+                    <path d="M16.5 8.5c0-1.6-1.8-2.8-4.1-2.8S8.3 6.7 8.3 8.2c0 1.6 1.3 2.3 4.1 2.8 2.5.5 4.1 1.1 4.1 3 0 1.7-1.9 2.9-4.4 2.9-2.3 0-4.2-1.1-4.6-2.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Competitive Price</h3>
+                <p class="mt-4 text-base leading-7 text-ink/70">
+                  Premium presentation and sourcing discipline balanced with pricing that supports long-term business growth.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="collection" class="py-20 sm:py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <div class="max-w-2xl">
+                <p class="section-title text-xs font-semibold uppercase text-coffee/70">Product Collection</p>
+                <h2 class="mt-5 font-display text-4xl text-ink sm:text-5xl">Our Coffee Collection</h2>
+                <p class="mt-5 text-lg leading-8 text-ink/70">
+                  A curated Beanori lineup shaped by regional character, premium presentation, and approachable daily usability.
+                </p>
+              </div>
+              <div class="rounded-full border border-coffee/10 bg-white/80 px-5 py-3 text-sm font-medium text-ink/70 shadow-soft">
+                Four signature products from Indonesian origins
+              </div>
+            </div>
+
+            <div class="mt-14 grid gap-8 xl:grid-cols-2">
+              <article class="product-card card-outline section-card-hover relative overflow-hidden rounded-[2.4rem] border border-white/60 bg-[#d5e1e3] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-8">
+                <img
+                  src="./EXPORT - PNG/ELEMENT LUNO.png"
+                  alt=""
+                  class="pointer-events-none absolute -right-10 top-0 h-72 w-72 object-contain opacity-[0.10]"
+                />
+                <div class="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                  <div>
+                    <p class="section-title text-xs font-semibold uppercase text-accent/90">Beanori LUNO</p>
+                    <h3 class="mt-4 font-display text-4xl text-ink">Arabica Gayo</h3>
+                    <p class="mt-5 text-base leading-7 text-ink/70">
+                      A refined Arabica coffee crafted in the cool highlands of Gayo. Smooth, aromatic, and elegant.
+                    </p>
+
+                    <div class="mt-8">
+                      <p class="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">Flavor notes</p>
+                      <div class="mt-3 flex flex-wrap gap-3">
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Floral</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Citrus</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Light chocolate</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-8 inline-flex rounded-full border border-white/70 bg-white/70 px-4 py-2 text-sm font-medium text-ink/75">
+                      Body: Medium smooth
+                    </div>
+                  </div>
+
+                  <div class="product-media-panel rounded-[2rem] border border-white/20 bg-white/10 p-6 shadow-soft backdrop-blur">
+                    <img
+                      src="./EXPORT - PNG/Packaging Luno Mockup Transparent.png"
+                      alt="Beanori Luno packaging mockup"
+                      class="mx-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-outline section-card-hover relative overflow-hidden rounded-[2.4rem] border border-white/60 bg-[#e8dfd4] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-8">
+                <img
+                  src="./EXPORT - PNG/ELEMENT KORA.png"
+                  alt=""
+                  class="pointer-events-none absolute -right-10 top-4 h-72 w-72 object-contain opacity-[0.09]"
+                />
+                <div class="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                  <div>
+                    <p class="section-title text-xs font-semibold uppercase text-coffee/80">Beanori KORA</p>
+                    <h3 class="mt-4 font-display text-4xl text-ink">Robusta Gayo</h3>
+                    <p class="mt-5 text-base leading-7 text-ink/70">
+                      A strong Robusta coffee designed for energy and intensity.
+                    </p>
+
+                    <div class="mt-8">
+                      <p class="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">Flavor notes</p>
+                      <div class="mt-3 flex flex-wrap gap-3">
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Dark chocolate</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Nutty</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Woody</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-8 inline-flex rounded-full border border-white/70 bg-white/70 px-4 py-2 text-sm font-medium text-ink/75">
+                      Body: Full and bold
+                    </div>
+                  </div>
+
+                  <div class="product-media-panel rounded-[2rem] border border-white/20 bg-white/10 p-6 shadow-soft backdrop-blur">
+                    <img
+                      src="./EXPORT - PNG/Packaging Kora Mockup Transparent.png"
+                      alt="Beanori Kora packaging mockup"
+                      class="mx-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-outline section-card-hover order-4 relative overflow-hidden rounded-[2.4rem] border border-white/10 bg-forest p-6 text-cream transition duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-8">
+                <img
+                  src="./EXPORT - PNG/ELEMENT ARKA.png"
+                  alt=""
+                  class="pointer-events-none absolute -right-10 top-2 h-72 w-72 object-contain opacity-[0.14] invert"
+                />
+                <div class="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                  <div>
+                    <p class="section-title text-xs font-semibold uppercase text-cream/70">Beanori ARKA</p>
+                    <h3 class="mt-4 font-display text-4xl text-cream">Robusta South Sumatra</h3>
+                    <p class="mt-5 text-base leading-7 text-cream/80">
+                      A grounded Robusta grown on volcanic slopes with deep structure and strength.
+                    </p>
+
+                    <div class="mt-8">
+                      <p class="text-xs font-semibold uppercase tracking-[0.24em] text-cream/60">Flavor notes</p>
+                      <div class="mt-3 flex flex-wrap gap-3">
+                        <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-cream">Earth-driven</span>
+                        <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-cream">Deep cocoa</span>
+                        <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-cream">Structured finish</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-8 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-cream/80">
+                      Body: Deep and structured
+                    </div>
+                  </div>
+
+                  <div class="product-media-panel rounded-[2rem] border border-white/20 bg-white/10 p-6 shadow-soft backdrop-blur">
+                    <img
+                      src="./EXPORT - PNG/Packaging Arka Mockup Transparent.png"
+                      alt="Beanori Arka packaging mockup"
+                      class="mx-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-outline section-card-hover order-3 relative overflow-hidden rounded-[2.4rem] border border-white/60 bg-[#eee7de] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-8">
+                <img
+                  src="./EXPORT - PNG/ELEMENT TERA.png"
+                  alt=""
+                  class="pointer-events-none absolute -right-10 top-0 h-72 w-72 object-contain opacity-[0.08]"
+                />
+                <div class="relative grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                  <div>
+                    <p class="section-title text-xs font-semibold uppercase text-coffee/80">Beanori TERA</p>
+                    <h3 class="mt-4 font-display text-4xl text-ink">Robusta Central Java</h3>
+                    <p class="mt-5 text-base leading-7 text-ink/70">
+                      Balanced Robusta with cocoa notes and smooth everyday drinkability.
+                    </p>
+
+                    <div class="mt-8">
+                      <p class="text-xs font-semibold uppercase tracking-[0.24em] text-ink/60">Flavor notes</p>
+                      <div class="mt-3 flex flex-wrap gap-3">
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Cocoa</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Balanced roast</span>
+                        <span class="rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-ink">Smooth finish</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-8 inline-flex rounded-full border border-white/70 bg-white/70 px-4 py-2 text-sm font-medium text-ink/75">
+                      Body: Smooth everyday balance
+                    </div>
+                  </div>
+
+                  <div class="product-media-panel rounded-[2rem] border border-white/20 bg-white/10 p-6 shadow-soft backdrop-blur">
+                    <img
+                      src="./EXPORT - PNG/Packaging Tera Mockup Transparent.png"
+                      alt="Beanori Tera packaging mockup"
+                      class="mx-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="team" class="py-20 sm:py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+              <p class="section-title text-xs font-semibold uppercase text-coffee/70">Management Team</p>
+              <h2 class="mt-5 font-display text-4xl text-ink sm:text-5xl">A focused team behind every partnership</h2>
+            </div>
+
+            <div class="mt-14 grid gap-6 lg:grid-cols-3">
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft">
+                <div class="flex h-16 w-16 items-center justify-center rounded-full bg-coffee font-display text-2xl text-cream">AS</div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Agus Setiawan</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.24em] text-coffee/70">Founder</p>
+                <p class="mt-5 text-base leading-7 text-ink/70">Strategic planning and B2B development.</p>
+              </article>
+
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft">
+                <div class="flex h-16 w-16 items-center justify-center rounded-full bg-forest font-display text-2xl text-cream">V</div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Vira</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.24em] text-coffee/70">Co-Founder</p>
+                <p class="mt-5 text-base leading-7 text-ink/70">Retail operations and financial tracking.</p>
+              </article>
+
+              <article class="rounded-[2rem] border border-coffee/10 bg-white/80 p-8 shadow-soft">
+                <div class="flex h-16 w-16 items-center justify-center rounded-full bg-accent font-display text-2xl text-cream">FU</div>
+                <h3 class="mt-6 font-display text-3xl text-ink">Ferdinand Utama</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-[0.24em] text-coffee/70">Co-Founder</p>
+                <p class="mt-5 text-base leading-7 text-ink/70">Technology and operations management.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="partner" class="py-20 sm:py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="relative overflow-hidden rounded-[2.8rem] bg-[linear-gradient(135deg,#2b2119_0%,#6B4F3B_38%,#314a2e_100%)] px-6 py-14 text-cream shadow-lift sm:px-10 lg:px-14">
+              <img
+                src="./EXPORT - PNG/ELEMENT 6.png"
+                alt=""
+                class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-10"
+              />
+              <div class="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+                <div class="max-w-2xl">
+                  <p class="section-title text-xs font-semibold uppercase text-cream/70">Partnership</p>
+                  <h2 class="mt-5 font-display text-4xl leading-tight sm:text-5xl">Partner With Beanori</h2>
+                  <p class="mt-5 text-lg leading-8 text-cream/80">
+                    Join us in delivering premium Indonesian coffee to cafes, restaurants, and coffee lovers worldwide.
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="https://wa.me/6282368643710"
+                    class="inline-flex items-center justify-center rounded-full bg-cream px-7 py-4 text-sm font-semibold text-coffee transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="mt-4 bg-bark text-cream">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:px-8">
+          <div>
+            <img
+              src="./EXPORT - PNG/LOGOTYPE 5.png"
+              alt="Beanori Indonesia"
+              class="h-14 w-auto object-contain"
+            />
+            <p class="mt-5 max-w-xl text-base leading-7 text-cream/70">
+              Premium Indonesian coffee rooted in origin, consistency, and premium presentation for retail and B2B growth.
+            </p>
+          </div>
+
+          <div class="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
+            <div class="space-y-3 text-sm leading-7 text-cream/75">
+              <p><span class="font-semibold text-cream">Email:</span> <a href="mailto:beanori.Indonesia@gmail.com" class="transition hover:text-white">Beanori.Indonesia@gmail.com</a></p>
+              <p><span class="font-semibold text-cream">Phone:</span> <a href="tel:+6282368643710" class="transition hover:text-white">+62 823 68643710</a></p>
+              <p><span class="font-semibold text-cream">Website:</span> <a href="http://www.beanori.com" class="transition hover:text-white">www.beanori.com</a></p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream/80" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" class="h-5 w-5 stroke-current" stroke-width="1.7">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                  <circle cx="12" cy="12" r="3.5"></circle>
+                  <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream/80" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path d="M6.4 8.6A1.6 1.6 0 1 0 6.4 5.4a1.6 1.6 0 0 0 0 3.2ZM5 10h2.8v9H5zm4.6 0h2.7v1.2h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2.1 3.7 4.8V19h-2.8v-4c0-1 0-2.4-1.5-2.4-1.5 0-1.8 1.1-1.8 2.3V19H9.6z"></path>
+                </svg>
+              </span>
+              <a
+                href="https://wa.me/6282368643710"
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream/80 transition hover:bg-white/10 hover:text-white"
+                aria-label="WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path d="M20 11.8A8 8 0 0 1 8.2 18.9L4 20l1.2-4A8 8 0 1 1 20 11.8ZM9.3 7.9c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.6.1-.9.4-.3.4-1.1 1-1.1 2.5s1.1 2.8 1.3 3c.2.2 2.1 3.3 5.1 4.4 2.5 1 3 0 3.6-.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.4-.2-.9-.4-.5-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.4-.8.9-.9 1.1-.2.2-.4.2-.7.1-.3-.2-1.5-.5-2.9-1.7-1.1-.9-1.8-2-2-2.3-.2-.3 0-.5.1-.7.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.8-.9-2.4Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
