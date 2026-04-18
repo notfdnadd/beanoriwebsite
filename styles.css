@@ -1,8 +1,8 @@
 :root {
-  --coffee: #6b4f3b;
-  --cream: #f7f5f2;
-  --forest: #3f5f3a;
-  --accent: #6b8f95;
+  --coffee: #6bb6d9;
+  --cream: #f4efe8;
+  --forest: #6e8f94;
+  --accent: #6bb6d9;
   --ink: #1f1f1f;
   --white-soft: rgba(255, 255, 255, 0.74);
   --shadow-soft: 0 24px 60px -32px rgba(45, 31, 19, 0.2);
@@ -15,9 +15,9 @@ html {
 
 body.site-body {
   background:
-    radial-gradient(circle at top left, rgba(107, 79, 59, 0.08), transparent 28%),
-    radial-gradient(circle at top right, rgba(107, 143, 149, 0.06), transparent 22%),
-    linear-gradient(180deg, #fcfaf8 0%, #f7f5f2 100%);
+    radial-gradient(circle at top left, rgba(107, 182, 217, 0.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(107, 182, 217, 0.06), transparent 22%),
+    linear-gradient(180deg, #f4efe8 0%, #eff7fb 100%);
 }
 
 .background-accent-fixed {
@@ -37,7 +37,7 @@ body.site-body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(247, 245, 242, 0.06), transparent 38%);
+  background: radial-gradient(circle at top left, rgba(244, 239, 232, 0.08), transparent 38%);
 }
 
 img {
